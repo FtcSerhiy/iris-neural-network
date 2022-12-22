@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "neural-network"
+version = "0.1.0"
+description = ""
+authors = ["ftc <ftcserhiy@gmail.com>"]
+readme = "README.md"
+packages = [{include = "neural_network"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.24.0"
+sklearn = "^0.0.post1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+main = "app:main"
